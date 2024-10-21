@@ -1,0 +1,6 @@
+node_modules
+android/app/
+android/.gradle/
+android/.idea/
+ios/pods/
+ios/FitnessApp/

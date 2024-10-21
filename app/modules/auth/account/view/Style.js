@@ -1,0 +1,295 @@
+import { Dimensions } from "react-native";
+import { scale, ScaledSheet } from "react-native-size-matters";
+import { COLORS, FONTS } from "../../../home/constant";
+const { width: ScreenWidth } = Dimensions.get("window");
+
+const styles = ScaledSheet.create({
+  textInputContainer: {
+    marginTop: 24,
+    justifyContent: "center",
+    width: ScreenWidth * 0.85,
+  },
+
+  forgotPasswordTextStyle: {
+    color: COLORS.themeGray,
+  },
+  forgotButtonStyle: {
+    height: 30,
+    justifyContent: "center",
+    marginLeft: "auto",
+  },
+  signUpButtonContainer: {
+    marginTop: 8,
+    width: ScreenWidth * 0.9,
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+  },
+  signUpButtonStyle: {
+    height: 40,
+    justifyContent: "center",
+    marginLeft: 1,
+  },
+  signUpTextStyle: {
+    fontSize: 14,
+    color: COLORS.themeGray,
+    fontFamily: FONTS.ARCHI_BOLD,
+  },
+  signUpButtonTextStyle: {
+    fontSize: 14,
+    fontWeight: "500",
+    color: COLORS.themGreen,
+  },
+  newAccountContainer: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: COLORS.themeGray,
+  },
+  keyboardAvoidingViewStyle: {
+    flex: 1,
+    alignSelf: "center",
+    justifyContent: "center",
+  },
+
+  rowContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    width: scale(250),
+  },
+  loginImage: {
+    width: 46,
+    height: 46,
+  },
+  container: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    paddingHorizontal: 20,
+    marginTop: 20,
+    margin: 10,
+    alignSelf: "center",
+  },
+  touchableView: {
+    flexDirection: "row",
+    width: 120,
+    height: 40,
+    borderRadius: 100,
+    borderWidth: 1,
+    borderColor: COLORS.themGreen,
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 20,
+    backgroundColor: COLORS.lightBlack,
+  },
+  selectedView: {
+    flexDirection: "row",
+    borderColor: COLORS.themGreen,
+    backgroundColor: COLORS.themGreen,
+  },
+  text: {
+    marginLeft: scale(7),
+    fontSize: 16,
+    color: COLORS.white,
+    fontFamily: FONTS.ARCHI_BOLD,
+  },
+  selectedText: {
+    fontSize: 16,
+    color: COLORS.black,
+    fontFamily: FONTS.ARCHI_BOLD,
+  },
+  logoImg: {
+    width: scale(15),
+    height: scale(15),
+  },
+  postImg: {
+    width: scale(260),
+    height: scale(320),
+    resizeMode: "contain",
+  },
+
+  // -------- other account ------
+  touchableView: {
+    width: 120,
+    height: 120,
+    borderRadius: 100,
+    borderWidth: 1,
+    borderColor: COLORS.lightBlack,
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 20,
+    backgroundColor: COLORS.lightBlack,
+  },
+  selectedView: {
+    flexDirection: "row",
+    borderColor: COLORS.themGreen,
+    backgroundColor: COLORS.lightBlack,
+  },
+  text: {
+    marginLeft: scale(7),
+    fontSize: 16,
+    color: COLORS.white,
+    fontFamily: FONTS.ARCHI_BOLD,
+  },
+  selectedText: {
+    fontSize: 16,
+    color: COLORS.themGreen,
+    fontFamily: FONTS.ARCHI_BOLD,
+  },
+
+  flexContainer: {
+    width: 120,
+    height: 40,
+    borderRadius: 50,
+    borderWidth: 1,
+    borderColor: COLORS.themGreen,
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 20,
+    backgroundColor: COLORS.themGreen,
+  },
+  flexDisableView: {
+    width: 120,
+    height: 40,
+    borderRadius: 50,
+    borderWidth: 1,
+    borderColor: COLORS.themGreen,
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 20,
+    backgroundColor: COLORS.lightBlack,
+  },
+  deselectText: {
+    fontSize: 16,
+    color: COLORS.black,
+    fontFamily: FONTS.ARCHI_BOLD,
+  },
+  imgStyle: {
+    width: scale(90),
+    height: scale(90),
+    borderRadius: 50,
+    resizeMode: "contain",
+    marginRight: 18,
+  },
+  verticalLine: {
+    width: 200,
+    borderWidth: 0.7,
+    borderColor: COLORS.lightGray,
+    marginVertical: scale(9),
+  },
+  cardContainer: {
+    flexDirection: "row",
+    width: scale(330),
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: COLORS.themGreen,
+    justifyContent: "center",
+    alignItems: "center",
+    alignSelf: "center",
+    marginVertical: 10,
+    backgroundColor: COLORS.lightBlack,
+    paddingVertical: scale(15),
+  },
+  cardContainerLight: {
+    flexDirection: "row",
+    width: scale(330),
+    borderRadius: 10,
+    borderColor: COLORS.themGreen,
+    justifyContent: "center",
+    alignItems: "center",
+    alignSelf: "center",
+    marginVertical: 10,
+    backgroundColor: COLORS.lightBlack,
+    paddingVertical: scale(15),
+  },
+  titleText: {
+    fontSize: 16,
+    fontFamily: FONTS.ARCHI_MEDIUM,
+    color: COLORS.white,
+  },
+  smallView: {
+    width: scale(10),
+    height: scale(10),
+    resizeMode: "contain",
+    marginRight: 5,
+    tintColor: COLORS.white,
+  },
+  rowViewAndImg: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: 1,
+  },
+  smallText: {
+    fontSize: 12,
+    fontFamily: FONTS.ARCHI_SEMBOLD,
+    color: COLORS.white,
+  },
+  flexRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginVertical: 3,
+  },
+  buttonView: {
+    width: scale(300),
+    alignItems: "center",
+    backgroundColor: COLORS.themGreen,
+    paddingVertical: scale(10),
+    borderRadius: 20,
+    alignSelf: "center",
+    position: "absolute",
+    bottom: 40,
+  },
+  card: {
+    width: 380,
+    height: 180,
+    flexDirection: "row",
+    backgroundColor: COLORS.lightBlack,
+    borderRadius: 10,
+    overflow: "hidden",
+    elevation: 3, // Add shadow for Android
+    shadowColor: "#000", // Add shadow for iOS
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 2,
+    alignItems: "center",
+  },
+  imageContainer: {
+    width: 70,
+    height: 70,
+    margin: 15,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  image: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 10,
+  },
+  textContainer: {
+    width: 250,
+    justifyContent: "center",
+    alignSelf: "flex-start",
+    alignSelf: "center",
+  },
+  description: {
+    fontSize: 18,
+    color: COLORS.white,
+    fontFamily: FONTS.ARCHI_SEMBOLD,
+    marginHorizontal: 10,
+  },
+  horizontalLine: {
+    borderWidth: 1,
+    borderColor: COLORS.gray,
+    width: scale(320),
+    alignSelf: "center",
+    marginVertical: 20,
+  },
+  buttonViewCancel: {
+    flexDirection: "row",
+    gap: 25,
+    padding: 30,
+    // marginRight: 30,
+    justifyContent: "center",
+  },
+});
+
+export default styles;
